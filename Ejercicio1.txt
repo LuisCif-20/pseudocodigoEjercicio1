@@ -1,0 +1,21 @@
+Proceso
+	var numero1
+	var contadorpar <- 0
+	var contadorimpar <- 0
+	Escribir "Ingresa un numero"
+	Leer numero1
+	Para i = 1, hasta i = numero1, i = i+1
+		var numrandom
+		var par
+		numrandom <- Aleatorio(1,100)
+		par <- MOD(numrandom, 2)
+		Escribir numrandom
+		Si par = 0
+			contadorpar = contadorpar + 1
+		Sino
+			contadorimpar = contadorimpar +1
+		FinSi
+	FinPara
+	Escribir "Hay " + contadorpar + " numeros pares"
+	Escribir "Hay " + contadoimpar  + " numeros impares"
+FinProceso
